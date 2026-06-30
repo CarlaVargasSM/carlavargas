@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Montserrat', sans-serif; background-color: #F8F5F2; color: #4A3728; }
+        h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
+        .bg-coffee { background-color: #4A3728; }
+        .text-coffee { color: #4A3728; }
+        .bg-sand { background-color: #E3D5CA; }
+        .photo-frame { background: linear-gradient(135deg, #E3D5CA 0%, #F8F5F2 100%); }
+        .page-section { display: none; }
+        .page-section.active { display: block; }
+        .banner-photo {
+            background-image: linear-gradient(90deg, rgba(74,55,40,0.78) 0%, rgba(74,55,40,0.45) 55%, rgba(74,55,40,0.2) 100%), url('https://i.imgur.com/IWtnXiy.png');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="leading-relaxed">
+
+<!-- =================== HOME =================== -->
+<div id="home" class="page-section active">
+
+    <!-- HERO -->
+    <section class="banner-photo px-6 py-24 md:py-32 text-white">
+        <div class="max-w-3xl">
+            <h1 class="text-4xl md:text-5xl mb-4">Muito prazer, sou <strong><em>Carla Vargas</em></strong></h1>
+            <p class="text-lg md:text-xl mb-8 opacity-95 max-w-xl">Estrategista de Conteúdo e Posicionamento Digital. Uno inteligência de dados, branding e comportamento do consumidor para transformar conteúdo em um ativo de crescimento real para a sua empresa.</p>
+            <a href="#contato" onclick="showPage('home'); setTimeout(function(){document.getElementById('contato-form').scrollIntoView({behavior:'smooth'})}, 50)" class="bg-white text-coffee px-8 py-4 rounded-full hover:opacity-90 transition inline-block font-semibold">Quero estruturar minha estratégia</a>
+        </div>
+    </section>
+
+    <!-- DOR -->
+    <section class="max-w-3xl mx-auto px-6 pt-20 pb-4 text-center">
+        <h2 class="text-3xl md:text-4xl mb-4">Pare de produzir conteúdo sem direção.</h2>
+        <p class="opacity-80">Sua empresa não precisa de mais postagens. Precisa de uma <strong><em>estratégia</em></strong> de conteúdo que fortaleça seu posicionamento, gere autoridade e transforme presença digital em oportunidades reais de negócio.</p>
+    </section>
+
+    <!-- DOR -->
+    <section class="max-w-3xl mx-auto px-6 py-20 text-center">
+        <h2 class="text-3xl md:text-4xl mb-8">Quando a comunicação não tem estratégia, o resultado também não.</h2>
+        <p class="mb-6 opacity-80">Talvez você já tenha sentido que:</p>
+        <ul class="text-left max-w-xl mx-auto space-y-3 mb-8 opacity-80">
+            <li>• posta com frequência, mas não gera autoridade;</li>
+            <li>• não consegue transmitir o valor do seu trabalho;</li>
+            <li>• sua comunicação parece desconectada do que sua empresa realmente entrega;</li>
+            <li>• investe tempo produzindo conteúdo, mas sem clareza sobre o retorno.</li>
+        </ul>
+        <p class="text-lg">O problema não é a falta de conteúdo.<br><strong><em>É a ausência de estratégia.</em></strong></p>
+    </section>
+
+    <!-- ESTRATÉGIA ANTES DA EXECUÇÃO -->
+    <section class="bg-sand py-20 px-6">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl mb-6"><strong><em>Estratégia</em></strong> antes da execução.</h2>
+            <p class="mb-4 opacity-80">Meu trabalho não começa criando posts. Começa entendendo o seu negócio.</p>
+            <p class="mb-4 opacity-80">Analiso posicionamento, diferenciais competitivos, comportamento do consumidor, branding, objetivos comerciais e arquitetura de conteúdo para construir uma comunicação coerente, estratégica e escalável.</p>
+            <p class="opacity-80">Cada conteúdo passa a cumprir uma função dentro da empresa. Não existe publicação aleatória. Existe intenção.</p>
+        </div>
+    </section>
+
+
+    <!-- COMO POSSO TE AJUDAR -->
+    <section class="max-w-6xl mx-auto py-20 px-6">
+        <h2 class="text-4xl text-center mb-16">Como Posso Te Ajudar</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+
+            <div class="p-8 border border-stone-300 rounded-xl hover:shadow-lg transition flex flex-col justify-between">
+                <div>
+                    <h3 class="text-2xl mb-4">Consultoria Estratégica</h3>
+                    <p class="text-sm opacity-70 mb-6">Diagnóstico completo da comunicação, posicionamento digital, branding, linha editorial, persona e plano estratégico. Ideal para empresas que buscam autonomia e crescimento sustentável.</p>
+                </div>
+                <a href="#consultoria-estrategica" onclick="showPage('consultoria-estrategica')" class="text-sm font-semibold text-coffee underline">Saiba mais →</a>
+            </div>
+
+            <div class="p-8 bg-coffee text-stone-100 rounded-xl shadow-xl flex flex-col justify-between">
+                <div>
+                    <h3 class="text-2xl mb-4">Plano Estratégia</h3>
+                    <p class="text-sm opacity-80 mb-6">Acompanhamento consultivo para empresas que desejam decisões orientadas por estratégia, análise e planejamento contínuo.</p>
+                </div>
+                <a href="#plano-estrategia" onclick="showPage('plano-estrategia')" class="text-sm font-semibold underline">Saiba mais →</a>
+            </div>
+
+            <div class="p-8 border border-stone-300 rounded-xl hover:shadow-lg transition flex flex-col justify-between">
+                <div>
+                    <h3 class="text-2xl mb-4">Plano Presença</h3>
+                    <p class="text-sm opacity-70 mb-6">Gestão da presença digital alinhada ao planejamento estratégico para manter consistência, relevância e autoridade.</p>
+                </div>
+                <a href="#plano-presenca" onclick="showPage('plano-presenca')" class="text-sm font-semibold text-coffee underline">Saiba mais →</a>
+            </div>
+
+            <div class="p-8 border border-stone-300 rounded-xl hover:shadow-lg transition flex flex-col justify-between">
+                <div>
+                    <h3 class="text-2xl mb-4">Estruturação de Perfil e Persona Arquetípica</h3>
+                    <p class="text-sm opacity-70 mb-6">Organização completa da comunicação da marca, biografia, destaques e narrativa, com a definição da personalidade da marca para uma comunicação autêntica, memorável e coerente.</p>
+                </div>
+                <a href="#perfil-persona" onclick="showPage('perfil-persona')" class="text-sm font-semibold text-coffee underline">Saiba mais →</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- METODOLOGIA -->
+    <section class="bg-sand py-20 px-6">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-4xl mb-10">Minha metodologia</h2>
+            <p class="mb-8 opacity-80">Todo projeto segue uma estrutura estratégica.</p>
+            <div class="flex flex-wrap justify-center gap-3 mb-10">
+                <span class="bg-white px-5 py-2 rounded-full text-sm shadow-sm">Diagnóstico</span>
+                <span class="bg-white px-5 py-2 rounded-full text-sm shadow-sm">Posicionamento</span>
+                <span class="bg-white px-5 py-2 rounded-full text-sm shadow-sm">Branding</span>
+                <span class="bg-white px-5 py-2 rounded-full text-sm shadow-sm">Linha Editorial</span>
+                <span class="bg-white px-5 py-2 rounded-full text-sm shadow-sm">Estratégia de Conteúdo</span>
+                <span class="bg-white px-5 py-2 rounded-full text-sm shadow-sm">Planejamento</span>
+                <span class="bg-white px-5 py-2 rounded-full text-sm shadow-sm">Execução</span>
+                <span class="bg-white px-5 py-2 rounded-full text-sm shadow-sm">Análise de Resultados</span>
+            </div>
+            <p class="text-lg">Porque comunicação eficiente não nasce da criatividade.<br><strong><em>Nasce do método.</em></strong></p>
+        </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section class="py-20 px-6">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl text-center mb-16">O Que Dizem Sobre o Meu Trabalho</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <p class="opacity-80">Parece que você conseguiu traduzir exatamente a essência da nossa empresa.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <p class="opacity-80">Seu trabalho trouxe direção para nossa comunicação.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <p class="opacity-80">Estamos muito felizes com essa parceria.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <p class="opacity-80">Aprendi muito mais do que imaginava.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="bg-sand max-w-none py-20 px-6">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-3xl text-center mb-10">Perguntas Frequentes</h2>
+            <div class="space-y-6">
+                <details class="bg-white p-6 rounded-lg shadow-sm">
+                    <summary class="font-semibold cursor-pointer">Você faz apenas o design?</summary>
+                    <p class="mt-4 opacity-80">Não. O design faz parte da comunicação, mas meu foco é construir uma estratégia capaz de gerar autoridade e resultados.</p>
+                </details>
+                <details class="bg-white p-6 rounded-lg shadow-sm">
+                    <summary class="font-semibold cursor-pointer">Como funciona a consultoria estratégica?</summary>
+                    <p class="mt-4 opacity-80">Realizo um diagnóstico completo do negócio, identifico oportunidades e desenvolvo um plano de comunicação alinhado aos objetivos da empresa.</p>
+                </details>
+                <details class="bg-white p-6 rounded-lg shadow-sm">
+                    <summary class="font-semibold cursor-pointer">O Plano Presença inclui estratégia?</summary>
+                    <p class="mt-4 opacity-80">Sim. Toda execução parte de um planejamento estratégico previamente definido.</p>
+                </details>
+                <details class="bg-white p-6 rounded-lg shadow-sm">
+                    <summary class="font-semibold cursor-pointer">Como a Inteligência Artificial faz parte do seu trabalho?</summary>
+                    <p class="mt-4 opacity-80">Utilizo IA para otimizar processos, acelerar análises e potencializar a produção de conteúdo, sempre mantendo a estratégia como prioridade.</p>
+                </details>
+                <details class="bg-white p-6 rounded-lg shadow-sm">
+                    <summary class="font-semibold cursor-pointer">Como começo?</summary>
+                    <p class="mt-4 opacity-80">Agende uma conversa. Vou entender seu momento, seus objetivos e indicar a melhor solução para o seu negócio.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA FINAL + FORMULÁRIO -->
+    <section id="contato" class="max-w-3xl mx-auto px-6 py-20 text-center">
+        <h2 class="text-3xl md:text-4xl mb-6">Sua empresa merece mais do que um perfil bonito.</h2>
+        <p class="mb-12 opacity-80">Ela merece uma comunicação estratégica capaz de construir autoridade, gerar confiança e impulsionar crescimento.</p>
+
+        <div id="contato-form" class="bg-white rounded-xl shadow-sm p-8 text-left max-w-xl mx-auto">
+            <h3 class="text-2xl mb-6 text-center">Falar com a Carla</h3>
+            <form action="https://formsubmit.co/cvdigitalholding@gmail.com" method="POST" class="space-y-4">
+                <input type="hidden" name="_next" value="#obrigada">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_subject" value="Novo contato pelo site - Carla Vargas">
+
+                <div>
+                    <label class="block text-sm mb-1 opacity-80">Nome</label>
+                    <input type="text" name="Nome" required class="w-full border border-stone-300 rounded-lg px-4 py-3 focus:outline-none focus:border-coffee">
+                </div>
+                <div>
+                    <label class="block text-sm mb-1 opacity-80">Telefone</label>
+                    <input type="tel" name="Telefone" required class="w-full border border-stone-300 rounded-lg px-4 py-3 focus:outline-none focus:border-coffee">
+                </div>
+                <div>
+                    <label class="block text-sm mb-1 opacity-80">E-mail</label>
+                    <input type="email" name="Email" required class="w-full border border-stone-300 rounded-lg px-4 py-3 focus:outline-none focus:border-coffee">
+                </div>
+                <div>
+                    <label class="block text-sm mb-1 opacity-80">Mensagem</label>
+                    <textarea name="Mensagem" rows="4" required class="w-full border border-stone-300 rounded-lg px-4 py-3 focus:outline-none focus:border-coffee"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-coffee text-white px-8 py-4 rounded-full hover:opacity-90 transition">Enviar mensagem</button>
+            </form>
+        </div>
+
+        <p class="mt-10 opacity-80">Ou fale direto pelo WhatsApp:</p>
+        <a href="https://wa.me/5521969450738" target="_blank" class="bg-coffee text-white px-8 py-4 rounded-full hover:opacity-90 transition inline-block mt-4">Falar no WhatsApp</a>
+    </section>
+</div>
+
+<!-- =================== PÁGINA DE OBRIGADA =================== -->
+<div id="obrigada" class="page-section">
+    <section class="max-w-2xl mx-auto px-6 py-32 text-center">
+        <h1 class="text-4xl mb-6">Obrigada pelo contato!</h1>
+        <p class="text-lg opacity-80 mb-10">Recebi a sua mensagem e em breve retorno para conversarmos sobre a estratégia ideal para o seu negócio.</p>
+        <a href="#home" onclick="showPage('home')" class="bg-coffee text-white px-8 py-4 rounded-full hover:opacity-90 transition inline-block">Voltar para o início</a>
+    </section>
+</div>
+
+<!-- =================== MINI PÁGINA: CONSULTORIA ESTRATÉGICA =================== -->
+<div id="consultoria-estrategica" class="page-section">
+    <section class="max-w-3xl mx-auto px-6 py-16">
+        <a href="#home" onclick="showPage('home')" class="text-sm text-coffee underline mb-8 inline-block">← Voltar</a>
+        <h1 class="text-4xl mb-2">Consultoria Estratégica</h1>
+        <p class="text-lg opacity-70 mb-10">Você não precisa se preocupar com o seu Instagram. Nós somos a mente, você só posta.</p>
+
+        <h3 class="text-2xl mb-3">Calendário Visual</h3>
+        <p class="mb-8 opacity-80">Uma grade simples mostrando o que postar.</p>
+
+        <h3 class="text-2xl mb-3">Os 12 Conteúdos</h3>
+        <ul class="list-disc pl-6 space-y-2 mb-8 opacity-80">
+            <li><strong>2 Reels</strong>: roteiro detalhado, com o que falar e legenda.</li>
+            <li><strong>10 Posts (Foto/Carrossel)</strong>: foto e legenda otimizada para SEO com palavras-chave, prontas para você copiar e colar.</li>
+            <li><strong>Stories</strong>: para você não ficar mais perdido.</li>
+        </ul>
+
+        <h3 class="text-2xl mb-3">Como é feita toda essa estrutura</h3>
+        <ul class="list-disc pl-6 space-y-2 mb-10 opacity-80">
+            <li>Definição de linha editorial para sustentar seu posicionamento.</li>
+            <li>Estudo da sua Persona arquetípica.</li>
+            <li>Calendário Editorial Estratégico, sempre com base na sua linha editorial.</li>
+            <li>12 Imagens de Composição Exclusivas: cenários, texturas e detalhes que reforçam o branding.</li>
+            <li>12 Legendas de Alto Padrão: escritas para converter e gerar autoridade.</li>
+            <li>2 Roteiros de Reels.</li>
+            <li>Plano Presença Diária: sugestões de stories para o mês inteiro, alinhadas ao seu calendário.</li>
+        </ul>
+
+        <a href="https://wa.me/5521969450738" target="_blank" class="bg-coffee text-white px-8 py-4 rounded-full hover:opacity-90 transition inline-block">Quero esse plano</a>
+    </section>
+</div>
+
+<!-- =================== MINI PÁGINA: PLANO ESTRATÉGIA =================== -->
+<div id="plano-estrategia" class="page-section">
+    <section class="max-w-3xl mx-auto px-6 py-16">
+        <a href="#home" onclick="showPage('home')" class="text-sm text-coffee underline mb-8 inline-block">← Voltar</a>
+        <h1 class="text-4xl mb-2">Plano Estratégia</h1>
+        <p class="text-lg opacity-70 mb-10">Foco aqui é o resultado mensurável. A entrega é robusta.</p>
+
+        <h3 class="text-2xl mb-3">Diagnóstico Avançado de Mercado</h3>
+        <ul class="list-disc pl-6 space-y-2 mb-8 opacity-80">
+            <li>Definição de linha editorial para sustentar seu posicionamento.</li>
+            <li>Estudo da sua persona arquetípica.</li>
+            <li>Estudo de palavras-chave do nicho e análise detalhada dos 3 principais concorrentes, o que eles fazem e como podemos superá-los.</li>
+        </ul>
+
+        <h3 class="text-2xl mb-3">O que está incluído</h3>
+        <ul class="list-disc pl-6 space-y-2 mb-10 opacity-80">
+            <li><strong>Gestão de Performance</strong>: monitoramento constante de métricas (alcance, engajamento, conversão e melhores horários).</li>
+            <li><strong>Reuniões de Alinhamento</strong>: apresentação do relatório, celebração das vitórias e ajuste de rota para o próximo mês.</li>
+            <li><strong>Relatório de Inteligência</strong>: documento mensal que não mostra apenas números, mas dá direção.</li>
+            <li><strong>Calendário de Escala</strong>: conteúdos desenhados especificamente para viralização ou conversão de vendas, conforme o momento do negócio.</li>
+            <li><strong>SEO e Palavras-chave</strong>: o perfil será encontrado por quem busca o serviço, não só por quem já o segue.</li>
+        </ul>
+
+        <h3 class="text-2xl mb-3">Otimização de Rastreabilidade (SEO)</h3>
+
+        <h4 class="text-xl mb-2">SEO de Perfil</h4>
+        <p class="mb-2 opacity-80">O algoritmo de busca lê campos específicos para decidir se mostra o perfil para alguém. O Instagram não lê mais apenas hashtags, ele lê o contexto do texto.</p>
+        <ul class="list-disc pl-6 space-y-2 mb-6 opacity-80">
+            <li><strong>Palavras-chave nas legendas</strong>: nas primeiras duas linhas da legenda, use os termos principais. Se o post é sobre "estilo minimalista", essa palavra precisa aparecer no texto.</li>
+            <li><strong>Texto alternativo (Alt Text)</strong>: a ferramenta mais poderosa para busca, e pouca gente usa. Isso ajuda o Google Imagens a indexar o post.</li>
+        </ul>
+
+        <h4 class="text-xl mb-2">Geotagging (Localização)</h4>
+        <p class="mb-6 opacity-80">Para negócios locais ou profissionais que atendem em regiões específicas, marcar a localização em todos os posts e Stories é fundamental. Quando alguém busca, por exemplo, "arquitetos em [cidade]", o Instagram cruza os dados de localização.</p>
+
+        <h4 class="text-xl mb-2">Configuração para Busca Externa (Google)</h4>
+        <p class="mb-10 opacity-80">Ajustes complementares para que o perfil também seja encontrado fora do próprio Instagram.</p>
+
+        <a href="https://wa.me/5521969450738" target="_blank" class="bg-coffee text-white px-8 py-4 rounded-full hover:opacity-90 transition inline-block">Quero esse plano</a>
+    </section>
+</div>
+
+<!-- =================== MINI PÁGINA: PLANO PRESENÇA =================== -->
+<div id="plano-presenca" class="page-section">
+    <section class="max-w-3xl mx-auto px-6 py-16">
+        <a href="#home" onclick="showPage('home')" class="text-sm text-coffee underline mb-8 inline-block">← Voltar</a>
+        <h1 class="text-4xl mb-2">Plano Presença</h1>
+        <p class="text-lg opacity-80 mb-10">Este serviço é focado em manter sua vitrine ativa, profissional e elegante. O objetivo é a manutenção da sua estratégia, permitindo que você foque no seu atendimento enquanto eu cuido da operacionalização do seu feed.</p>
+
+        <h3 class="text-2xl mb-3">O que está incluído</h3>
+        <ul class="list-disc pl-6 space-y-2 mb-10 opacity-80">
+            <li>12 posts por mês</li>
+            <li>Calendário básico</li>
+            <li>Legendas</li>
+            <li>Design</li>
+            <li>Postagem</li>
+            <li>Organização visual</li>
+        </ul>
+
+        <h3 class="text-2xl mb-3">Como funciona</h3>
+        <ul class="list-disc pl-6 space-y-2 mb-10 opacity-80">
+            <li><strong>Arquitetura de Perfil</strong>: mudança total da bio, organização dos destaques e ajuste de foto de perfil, se necessário.</li>
+            <li><strong>Planejamento</strong>: montagem do calendário editorial do primeiro ciclo e envio para aprovação do cliente.</li>
+            <li><strong>Preparação</strong>: criação das imagens e redação das legendas.</li>
+        </ul>
+
+        <a href="https://wa.me/5521969450738" target="_blank" class="bg-coffee text-white px-8 py-4 rounded-full hover:opacity-90 transition inline-block">Quero esse plano</a>
+    </section>
+</div>
+
+<!-- =================== MINI PÁGINA: ESTRUTURAÇÃO DE PERFIL E PERSONA ARQUETÍPICA =================== -->
+<div id="perfil-persona" class="page-section">
+    <section class="max-w-3xl mx-auto px-6 py-16">
+        <a href="#home" onclick="showPage('home')" class="text-sm text-coffee underline mb-8 inline-block">← Voltar</a>
+        <h1 class="text-4xl mb-2">Estruturação de Perfil e Persona Arquetípica</h1>
+        <p class="text-lg opacity-70 mb-10">Mapa de Estratégia e Persona: direcionamento de marca digital, definição da personalidade da marca e fundamentos de imagem e perfil.</p>
+
+        <h3 class="text-2xl mb-3">Diagnóstico de Marca (O Olhar Clínico)</h3>
+        <ul class="list-disc pl-6 space-y-2 mb-8 opacity-80">
+            <li>Análise do que o perfil transmite hoje versus o que deveria transmitir.</li>
+            <li>Identificação de pontos de melhoria imediatos, o ajuste fino.</li>
+        </ul>
+
+        <h3 class="text-2xl mb-3">Mestre de Persona (A Inteligência)</h3>
+        <ul class="list-disc pl-6 space-y-2 mb-8 opacity-80">
+            <li>Definição da persona: dores, desejos, medos e o que a faz comprar.</li>
+            <li>Não é apenas um "público-alvo", é o desenho de quem o cliente atrai.</li>
+            <li>Mapeamento do arquétipo de marca, com base em comportamento do consumidor e branding.</li>
+            <li>Tom de voz alinhado ao arquétipo identificado.</li>
+        </ul>
+
+        <h3 class="text-2xl mb-3">Otimização de Perfil (A Vitrine)</h3>
+        <ul class="list-disc pl-6 space-y-2 mb-8 opacity-80">
+            <li><strong>Bio Estratégica</strong>: escrita com gancho de autoridade e CTA.</li>
+            <li><strong>Curadoria de Feed</strong>: como organizar as fotos para gerar ritmo visual.</li>
+            <li><strong>Destaques</strong>: sugestão de nomes e o que deve conter em cada um para vender no automático.</li>
+        </ul>
+
+        <h3 class="text-2xl mb-3">Guia de Estratégia (O Manual de Conduta)</h3>
+        <ul class="list-disc pl-6 space-y-2 mb-10 opacity-80">
+            <li><strong>Tom de Voz</strong>: como a marca fala, elegante, direta ou acolhedora.</li>
+            <li><strong>Pilares de Conteúdo</strong>: o que postar para ser visto como autoridade.</li>
+            <li><strong>Guia de Estilo</strong>: sugestão de elementos visuais que reforçam o arquétipo.</li>
+            <li><strong>Documento de referência</strong>: para consulta da equipe ou de futuros fornecedores de conteúdo.</li>
+        </ul>
+
+        <a href="https://wa.me/5521969450738" target="_blank" class="bg-coffee text-white px-8 py-4 rounded-full hover:opacity-90 transition inline-block">Quero esse serviço</a>
+    </section>
+</div>
+
+<script>
+    function showPage(id) {
+        document.querySelectorAll('.page-section').forEach(function(el) {
+            el.classList.remove('active');
+        });
+        document.getElementById(id).classList.add('active');
+        window.scrollTo(0, 0);
+    }
+    window.addEventListener('DOMContentLoaded', function() {
+        var hash = window.location.hash.replace('#', '');
+        if (hash && document.getElementById(hash)) {
+            showPage(hash);
+        }
+    });
+</script>
+
+</body>
+</html>
