@@ -14,7 +14,9 @@ h1,h2,h3,h4{font-family:'Playfair Display',serif}
 .page-section{display:none}
 .page-section.active{display:block}
 .hero-wrap{position:relative;background:#4A3728;background-image:linear-gradient(90deg,#4A3728 0%,#4A3728 28%,rgba(74,55,40,0.85) 38%,rgba(74,55,40,0.5) 48%,rgba(74,55,40,0.15) 58%,rgba(74,55,40,0) 68%),url('https://i.imgur.com/IWtnXiy.png');background-repeat:no-repeat;background-position:right center;background-size:auto 130%;min-height:520px}
-@media(max-width:767px){.hero-wrap{background-image:linear-gradient(180deg,rgba(74,55,40,0) 25%,rgba(74,55,40,0.55) 42%,rgba(74,55,40,0.88) 56%,#4A3728 68%,#4A3728 100%),url('https://i.imgur.com/IWtnXiy.png');background-position:top center;background-size:100% auto;min-height:440px}}
+@media(max-width:767px){.hero-wrap{background-image:linear-gradient(180deg,rgba(74,55,40,0) 25%,rgba(74,55,40,0.55) 42%,rgba(74,55,40,0.88) 56%,#4A3728 68%,#4A3728 100%),url('https://i.imgur.com/IWtnXiy.png');background-position:top center;background-size:100% auto;min-height:440px}
+.hero-mobile-bottom{justify-content:flex-end;text-align:center;padding-bottom:0}
+.cta-overlap{margin-bottom:-28px;box-shadow:0 8px 20px rgba(74,55,40,0.35);position:relative;z-index:20}}
 </style>
 </head>
 <body class="leading-relaxed">
@@ -23,12 +25,12 @@ h1,h2,h3,h4{font-family:'Playfair Display',serif}
 
 <!-- HERO -->
 <section class="hero-wrap">
-  <div class="max-w-6xl mx-auto flex items-center min-h-[440px] md:min-h-[560px] px-5 sm:px-6 md:px-10 py-10 md:py-0">
+  <div class="max-w-6xl mx-auto flex items-end md:items-center hero-mobile-bottom min-h-[440px] md:min-h-[560px] px-5 sm:px-6 md:px-10 py-10 md:py-0">
     <div class="w-full md:w-3/5 relative z-10">
-      <div class="max-w-lg">
+      <div class="max-w-lg mx-auto md:mx-0">
         <h1 class="text-[1.7rem] sm:text-4xl md:text-5xl text-white mb-3 md:mb-4 leading-tight">Muito prazer, sou <strong><em>Carla Vargas</em></strong></h1>
-        <p class="text-sm sm:text-base md:text-lg text-white opacity-90 mb-6 md:mb-8">Estrategista de Conteúdo e Posicionamento Digital. Uno inteligência de dados, branding e comportamento do consumidor para transformar conteúdo em um ativo de crescimento real para a sua empresa.</p>
-        <a href="#contato" onclick="showPage('home');setTimeout(function(){document.getElementById('contato-form').scrollIntoView({behavior:'smooth'})},50)" class="bg-white text-coffee px-6 py-3 md:px-7 md:py-3.5 rounded-full hover:opacity-90 transition inline-block font-semibold text-sm md:text-base">Quero estruturar minha estratégia</a>
+        <p class="text-sm sm:text-base md:text-lg text-white opacity-90 mb-8 md:mb-8">Estrategista de Conteúdo e Posicionamento Digital. Uno inteligência de dados, branding e comportamento do consumidor para transformar conteúdo em um ativo de crescimento real para a sua empresa.</p>
+        <a href="#contato" onclick="showPage('home');setTimeout(function(){document.getElementById('contato-form').scrollIntoView({behavior:'smooth'})},50)" class="cta-overlap bg-white text-coffee px-6 py-3 md:px-7 md:py-3.5 rounded-full hover:opacity-90 transition inline-block font-semibold text-sm md:text-base">Quero estruturar minha estratégia</a>
       </div>
     </div>
   </div>
@@ -144,7 +146,7 @@ h1,h2,h3,h4{font-family:'Playfair Display',serif}
   <div id="contato-form" class="bg-white rounded-xl shadow-sm p-6 md:p-8 text-left">
     <h3 class="text-xl md:text-2xl mb-6 text-center">Falar com a Carla</h3>
     <form action="https://formsubmit.co/cvdigitalholding@gmail.com" method="POST" class="space-y-4">
-      <input type="hidden" name="_next" value="#obrigada">
+      <input type="hidden" name="_next" value="https://SEUDOMINIO.com/index.html#obrigada">
       <input type="hidden" name="_captcha" value="false">
       <input type="hidden" name="_subject" value="Novo contato pelo site - Carla Vargas">
       <div><label class="block text-sm mb-1 opacity-80">Nome</label><input type="text" name="Nome" required class="w-full border border-stone-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-coffee"></div>
